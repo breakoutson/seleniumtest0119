@@ -17,16 +17,22 @@ def get_driver():
 # options.add_argument('--headless')
 
 
-hash_tag = st.text_input("해시태그 입력 >> ")
+browser = get_driver()
+browser.get('https://www.instagram.com/accounts/login/')
 
 
-if hash_tag != '':
 
-    hash_tag = hash_tag.replace(' ','')
-    user_comment = '공감하고 갑니다'
-    browser = get_driver()
-    browser.get('https://www.instagram.com/accounts/login/')
-    # 로그인 하기
+
+
+
+
+# if hash_tag != '':
+
+#     hash_tag = hash_tag.replace(' ','')
+#     user_comment = '공감하고 갑니다'
+#     browser = get_driver()
+#     browser.get('https://www.instagram.com/accounts/login/')
+#     # 로그인 하기
 #     id = browser.find_element_by_name("username")
 #     id.send_keys("ootzaa01") # 본인 계정 적어주세요!
 #     pw = browser.find_element_by_name("password")
