@@ -12,11 +12,11 @@ from selenium.webdriver.common.keys import Keys
 def get_driver():
     return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-options = Options()
-options.add_argument('--disable-gpu')
-options.add_argument('--headless')
+# options = Options()
+# options.add_argument('--disable-gpu')
+# options.add_argument('--headless')
 
 driver = get_driver()
-driver.get('http://example.com')
+driver.get('https://www.instagram.com/accounts/login/)
 
-st.code(driver.page_source)
+
