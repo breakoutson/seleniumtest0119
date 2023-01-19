@@ -14,6 +14,6 @@ def get_driver():
 # options.add_argument('--headless')
 
 driver = get_driver()
-driver.get('http://example.com')
+driver.get('https://www.instagram.com/accounts/login/')
 
 st.code(driver.page_source)
